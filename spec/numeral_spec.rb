@@ -30,8 +30,11 @@ describe Numeral do
     it 'changes 10 to X' do
       expect(subject.change(10)).to eq 'X'
     end
-    # it 'changes 8 to VIII' do
-    #   expect(subject.change(8)).to eq 'VIII'
-    # end
+    it 'changes 1 to XI' do
+      expect(subject.change(11)).to eq 'XI'
+    end
+    it 'changes 15 to XV' do
+      expect(subject.change(15)).to eq 'XV'
+    end
   end
 end
